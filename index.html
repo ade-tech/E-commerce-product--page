@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <!-- <script src="src/index.js" defer></script> -->
+    <script type="module" src="src/index.js"></script>
 
     <link
       rel="icon"
@@ -35,16 +36,44 @@
 
     <main>
       <div class="imageView">
-        <img src="images/image-product-1.jpg" alt="MainImage" />
+        <img
+          src="images/image-product-1.jpg"
+          alt="MainImage"
+          class="headerImage"
+        />
         <div class="otherImages">
-          <img
-            src="images/image-product-1-thumbnail.jpg"
-            alt=""
-            class="image-active"
-          />
-          <img src="images/image-product-1-thumbnail.jpg" alt="" />
-          <img src="images/image-product-1-thumbnail.jpg" alt="" />
-          <img src="images/image-product-1-thumbnail.jpg" alt="" />
+          <div class="imagecont container-active">
+            <img
+              src="images/image-product-1-thumbnail.jpg"
+              alt=""
+              class="image-active"
+              data-image="images/image-product-1.jpg"
+            />
+          </div>
+          <div class="imagecont">
+            <img
+              src="images/image-product-2-thumbnail.jpg"
+              alt=""
+              class="image-active"
+              data-image="images/image-product-2.jpg"
+            />
+          </div>
+          <div class="imagecont">
+            <img
+              src="images/image-product-3-thumbnail.jpg"
+              alt=""
+              class="image-active"
+              data-image="images/image-product-3.jpg"
+            />
+          </div>
+          <div class="imagecont">
+            <img
+              src="images/image-product-4-thumbnail.jpg"
+              alt=""
+              class="image-active"
+              data-image="images/image-product-4.jpg"
+            />
+          </div>
         </div>
       </div>
       <div class="textView">
@@ -55,11 +84,13 @@
           Featuring a durable rubber outer sole, they’ll withstand everything
           the weather can offer
         </p>
-        <h2 class="price">$125.00 <span>50%</span></h2>
+        <h2 class="price">$125.00</h2>
+        <span class="percent">50%</span>
         <p class="deleted"><del>$250.00</del></p>
         <div class="buttons">
           <button class="AddBtn">
-            <span class="minus">&minus;</span>0 <span class="plus">+</span>
+            <span class="minus">&minus;</span> <span class="value">1</span>
+            <span class="plus">+</span>
           </button>
           <button class="cartBtn">
             <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -74,11 +105,23 @@
         </div>
       </div>
     </main>
-    <!-- Collections Men Women About Contact Sneaker Company Fall Limited Edition
-    Sneakers These low-profile sneakers are your perfect casual wear companion.
-    Featuring a durable rubber outer sole, they’ll withstand everything the
-    weather can offer. $125.00 50% $250.00 0 Add to cart -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <img src="images/image-product-1.jpg" alt="" class="swiper-slide" />
+        <img src="images/image-product-2.jpg" alt="" class="swiper-slide" />
+        <img src="images/image-product-3.jpg" alt="" class="swiper-slide" />
+        <img src="images/image-product-4.jpg" alt="" class="swiper-slide" />
 
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
     <div class="attribution">
       <p>Challenge from FrontedMentor and developed by Abdone</p>
     </div>
