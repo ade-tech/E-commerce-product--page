@@ -1,9 +1,3 @@
-import Swiper from "swiper";
-import "swiper/css";
-import { Navigation } from "swiper/modules";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
 const headerImage = document.querySelector(".headerImage");
 const otherImages = document.querySelector(".otherImages");
 const AllImages = Array.from(document.querySelectorAll(".imagecont"));
@@ -50,13 +44,4 @@ subtract.addEventListener("click", function () {
   count >= 1
     ? (ValueHTML.innerHTML = `$ ${Number.parseInt(ValueText) * count}.00`)
     : "";
-});
-
-const swiper = new Swiper(".swiper", {
-  direction: "horizontal",
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
 });

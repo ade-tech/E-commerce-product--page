@@ -201,6 +201,11 @@ h2 {
 .imagecont:not(:last-of-type) {
   margin-right: 22.5px;
 }
+
+footer {
+  text-align: center;
+  margin: 20px 0;
+}
 /* For small devices like phones (up to 600px wide) */
 @media screen and (max-width: 600px) {
   main {
